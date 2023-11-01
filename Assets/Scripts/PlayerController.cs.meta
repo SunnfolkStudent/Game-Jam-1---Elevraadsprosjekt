@@ -3,7 +3,37 @@ guid: ee9902a216c7aff46b03ddb84a2d9619
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - quad: {instanceID: 0}
+  - Akeleie: {instanceID: 0}
+  - "Bl\xE5klokke": {fileID: -2253911629886400664, guid: 74e8516e2eb44174193c917bf666e555, type: 3}
+  - Cyathium: {fileID: -2253911629886400664, guid: 746f8d271e267a84aa41fd31e40ecb97, type: 3}
+  - "Dvergbj\xF8rk": {instanceID: 0}
+  - Einer: {instanceID: 0}
+  - "Fjellmarik\xE5pe": {instanceID: 0}
+  - Gran: {instanceID: 0}
+  - Hvitveis: {instanceID: 0}
+  - Istevier: {instanceID: 0}
+  - Jonsokkoll: {instanceID: 0}
+  - Kattehale: {instanceID: 0}
+  - "L\xF8vetann": {instanceID: 0}
+  - "Marian\xF8kleblom": {instanceID: 0}
+  - "Nikkebr\xF8nsle": {instanceID: 0}
+  - Oksetunge: {instanceID: 0}
+  - Prestekrage: {instanceID: 0}
+  - Queen_of_the_Prairie: {instanceID: 0}
+  - Rose_Oransj: {instanceID: 0}
+  - Syrin: {instanceID: 0}
+  - "Takr\xF8r": {instanceID: 0}
+  - Ugrasklokke: {instanceID: 0}
+  - Vivendel: {instanceID: 0}
+  - Wandflower: {instanceID: 0}
+  - Xeranthemum_annuum: {instanceID: 0}
+  - Yarrow: {instanceID: 0}
+  - Zantedeschia: {instanceID: 0}
+  - "\xC6delmynt": {instanceID: 0}
+  - "\xD8revier": {instanceID: 0}
+  - "\xC5kerb\xE6r": {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

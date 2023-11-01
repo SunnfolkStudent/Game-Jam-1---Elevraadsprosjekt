@@ -8,6 +8,9 @@ public class PlayerController : MonoBehaviour
    private Keyboard _keyboard;
 
    public GameObject quad;
+   public GameObject Sau;
+   public bool s_Bool;
+   public bool s_a_Bool;
    
    public GameObject Akeleie;
    public GameObject Blåklokke;
@@ -29,7 +32,7 @@ public class PlayerController : MonoBehaviour
    public GameObject Rose_Oransj;
    public GameObject Syrin;
    public GameObject Takrør;
-   public GameObject Ugrasklokke;
+   [FormerlySerializedAs("Urisina")] public GameObject Ursinia;
    public GameObject Vivendel;
    public GameObject Wandflower;
    public GameObject Xeranthemum_annuum;
@@ -42,6 +45,8 @@ public class PlayerController : MonoBehaviour
    public void Start()
    {
       _keyboard = Keyboard.current;
+      s_Bool = false;
+      s_a_Bool = false;
    }
 
    public void Update()
@@ -103,7 +108,7 @@ public class PlayerController : MonoBehaviour
 
       if (_keyboard.lKey.wasPressedThisFrame)
       {
-         spawnObjectMethodKattehale();
+         spawnObjectMethodLøvetann();
       }
 
       if (_keyboard.mKey.wasPressedThisFrame)
@@ -148,7 +153,7 @@ public class PlayerController : MonoBehaviour
 
       if (_keyboard.uKey.wasPressedThisFrame)
       {
-         spawnObjectMethodUgrasklokke();
+         spawnObjectMethodUrsinia();
       }
 
       if (_keyboard.vKey.wasPressedThisFrame)
@@ -189,6 +194,12 @@ public class PlayerController : MonoBehaviour
       pos = new Vector2(screenX, screenY);
          
       Instantiate(Akeleie, pos, Akeleie.transform.rotation);
+
+      if (s_Bool)
+      {
+         s_Bool = false;
+         s_a_Bool = true;
+      }
    }
    
    public void spawnObjectMethodBlåklokke()
@@ -415,30 +426,35 @@ public class PlayerController : MonoBehaviour
    public void spawnObjectMethodSyrin()
    {
       MeshCollider c = quad.GetComponent<MeshCollider>();
-      float screenX, screenY;
-      Vector2 pos;
-      
-      screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
-      screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
-      pos = new Vector2(screenX, screenY);
+
+      var screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
+      var screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
+      var pos = new Vector2(screenX, screenY);
          
       Instantiate(Syrin, pos, Syrin.transform.rotation);
+      if (s_Bool == false)
+      {
+         s_Bool = true;
+      }
+      else
+      {
+         s_Bool = true;
+         s_a_Bool = false;
+      }
    }
-   
-   public void spawnObjectMethodTakrør()
+
+   private void spawnObjectMethodTakrør()
    {
       MeshCollider c = quad.GetComponent<MeshCollider>();
-      float screenX, screenY;
-      Vector2 pos;
-      
-      screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
-      screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
-      pos = new Vector2(screenX, screenY);
+
+      var screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
+      var screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
+      var pos = new Vector2(screenX, screenY);
          
       Instantiate(Takrør, pos, Takrør.transform.rotation);
    }
    
-   public void spawnObjectMethodUgrasklokke()
+   public void spawnObjectMethodUrsinia()
    {
       MeshCollider c = quad.GetComponent<MeshCollider>();
       float screenX, screenY;
@@ -448,7 +464,13 @@ public class PlayerController : MonoBehaviour
       screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
       pos = new Vector2(screenX, screenY);
          
-      Instantiate(Ugrasklokke, pos, Ugrasklokke.transform.rotation);
+      Instantiate(Ursinia, pos, Ursinia.transform.rotation);
+      
+      if (s_a_Bool)
+      {
+         Instantiate(Sau, pos, Sau.transform.rotation);
+         s_a_Bool = false;
+      }
    }
    
    public void spawnObjectMethodVivendel()
