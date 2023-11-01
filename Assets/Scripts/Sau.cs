@@ -8,7 +8,6 @@ public class Sau : MonoBehaviour
     {
         flower = GameObject.FindGameObjectWithTag("Flower").transform;
     }
-
     
     void Update()
     {
@@ -29,6 +28,7 @@ public class Sau : MonoBehaviour
             if (GameObject.FindGameObjectWithTag("Flower"))
             {
                 flower = GameObject.FindGameObjectWithTag("Flower").transform;
+                gameObject.transform.localScale += new Vector3(0.1f, 0.1f, 0.1f);
             }
             else
             {

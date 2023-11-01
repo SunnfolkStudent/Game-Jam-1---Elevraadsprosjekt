@@ -419,7 +419,7 @@ public class PlayerController : MonoBehaviour
       screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
       screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
       pos = new Vector2(screenX, screenY);
-         
+      
       Instantiate(Rose_Oransj, pos, Rose_Oransj.transform.rotation);
    }
    
