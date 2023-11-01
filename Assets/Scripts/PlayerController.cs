@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class PlayerController : MonoBehaviour
@@ -10,39 +9,39 @@ public class PlayerController : MonoBehaviour
 
    public GameObject quad;
    public MeshCollider c;
-   public GameObject Sau;
+   public GameObject sau;
    public bool sBool;
    public bool saBool;
    
-   public GameObject Akeleie;
-   public GameObject Blåklokke;
-   public GameObject Cyathium;
-   public GameObject Dvergbjørk;
-   public GameObject Einer;
-   public GameObject Fjellmarikåpe;
-   public GameObject Gran;
-   public GameObject Hvitveis;
-   public GameObject Istevier;
-   public GameObject Jonsokkoll;
-   public GameObject Kattehale;
-   public GameObject Løvetann;
-   public GameObject Marianøkleblom;
-   public GameObject Nikkebrønsle;
-   public GameObject Oksetunge;
-   public GameObject Prestekrage;
-   public GameObject Queen_of_the_Prairie;
-   public GameObject Rose_Oransj;
-   public GameObject Syrin;
-   public GameObject Takrør;
-   public GameObject Ursinia;
-   public GameObject Vivendel;
-   public GameObject Wandflower;
-   public GameObject Xeranthemum_annuum;
-   public GameObject Yarrow;
-   public GameObject Zantedeschia;
-   public GameObject Ædelmynt;
-   public GameObject Ørevier;
-   public GameObject Åkerbær;
+   public GameObject akeleie;
+   public GameObject blåklokke;
+   public GameObject cyathium;
+   public GameObject dvergbjørk;
+   public GameObject einer;
+   public GameObject fjellmarikåpe;
+   public GameObject gran;
+   public GameObject hvitveis;
+   public GameObject istevier;
+   public GameObject jonsokkoll;
+   public GameObject kattehale;
+   public GameObject løvetann;
+   public GameObject marianøkleblom;
+   public GameObject nikkebrønsle;
+   public GameObject oksetunge;
+   public GameObject prestekrage;
+   public GameObject queenOfThePrairie;
+   public GameObject roseOransj;
+   public GameObject syrin;
+   public GameObject takrør;
+   public GameObject ursinia;
+   public GameObject vivendel;
+   public GameObject wandflower;
+   public GameObject xeranthemumAnnuum;
+   public GameObject yarrow;
+   public GameObject zantedeschia;
+   public GameObject ædelmynt;
+   public GameObject ørevier;
+   public GameObject åkerbær;
 
    public void Start()
    {
@@ -58,7 +57,7 @@ public class PlayerController : MonoBehaviour
    {
       if (_keyboard.aKey.wasPressedThisFrame)
       {
-         spawnObjectMethod(Akeleie);
+         spawnObjectMethod(akeleie);
          
          if (sBool)
          {
@@ -67,27 +66,27 @@ public class PlayerController : MonoBehaviour
          }
       }
 
-      if (_keyboard.bKey.wasPressedThisFrame) { spawnObjectMethod(Blåklokke); }
-      if (_keyboard.cKey.wasPressedThisFrame) { spawnObjectMethod(Cyathium); }
-      if (_keyboard.dKey.wasPressedThisFrame) { spawnObjectMethod(Dvergbjørk); }
-      if (_keyboard.eKey.wasPressedThisFrame) { spawnObjectMethod(Einer); }
-      if (_keyboard.fKey.wasPressedThisFrame) { spawnObjectMethod(Fjellmarikåpe); }
-      if (_keyboard.gKey.wasPressedThisFrame) { spawnObjectMethod(Gran); }
-      if (_keyboard.hKey.wasPressedThisFrame) { spawnObjectMethod(Hvitveis); }
-      if (_keyboard.iKey.wasPressedThisFrame) { spawnObjectMethod(Istevier); }
-      if (_keyboard.jKey.wasPressedThisFrame) { spawnObjectMethod(Jonsokkoll); }
-      if (_keyboard.kKey.wasPressedThisFrame) { spawnObjectMethod(Kattehale); }
-      if (_keyboard.lKey.wasPressedThisFrame) { spawnObjectMethod(Løvetann); }
-      if (_keyboard.mKey.wasPressedThisFrame) { spawnObjectMethod(Marianøkleblom); }
-      if (_keyboard.nKey.wasPressedThisFrame) { spawnObjectMethod(Nikkebrønsle); }
-      if (_keyboard.oKey.wasPressedThisFrame) { spawnObjectMethod(Oksetunge); }
-      if (_keyboard.pKey.wasPressedThisFrame) { spawnObjectMethod(Prestekrage); }
-      if (_keyboard.qKey.wasPressedThisFrame) { spawnObjectMethod(Queen_of_the_Prairie); }
-      if (_keyboard.rKey.wasPressedThisFrame) { spawnObjectMethod(Rose_Oransj); }
+      if (_keyboard.bKey.wasPressedThisFrame) { spawnObjectMethod(blåklokke); }
+      if (_keyboard.cKey.wasPressedThisFrame) { spawnObjectMethod(cyathium); }
+      if (_keyboard.dKey.wasPressedThisFrame) { spawnObjectMethod(dvergbjørk); }
+      if (_keyboard.eKey.wasPressedThisFrame) { spawnObjectMethod(einer); }
+      if (_keyboard.fKey.wasPressedThisFrame) { spawnObjectMethod(fjellmarikåpe); }
+      if (_keyboard.gKey.wasPressedThisFrame) { spawnObjectMethod(gran); }
+      if (_keyboard.hKey.wasPressedThisFrame) { spawnObjectMethod(hvitveis); }
+      if (_keyboard.iKey.wasPressedThisFrame) { spawnObjectMethod(istevier); }
+      if (_keyboard.jKey.wasPressedThisFrame) { spawnObjectMethod(jonsokkoll); }
+      if (_keyboard.kKey.wasPressedThisFrame) { spawnObjectMethod(kattehale); }
+      if (_keyboard.lKey.wasPressedThisFrame) { spawnObjectMethod(løvetann); }
+      if (_keyboard.mKey.wasPressedThisFrame) { spawnObjectMethod(marianøkleblom); }
+      if (_keyboard.nKey.wasPressedThisFrame) { spawnObjectMethod(nikkebrønsle); }
+      if (_keyboard.oKey.wasPressedThisFrame) { spawnObjectMethod(oksetunge); }
+      if (_keyboard.pKey.wasPressedThisFrame) { spawnObjectMethod(prestekrage); }
+      if (_keyboard.qKey.wasPressedThisFrame) { spawnObjectMethod(queenOfThePrairie); }
+      if (_keyboard.rKey.wasPressedThisFrame) { spawnObjectMethod(roseOransj); }
       
       if (_keyboard.sKey.wasPressedThisFrame) 
       {
-         spawnObjectMethod(Syrin);
+         spawnObjectMethod(syrin);
          if (sBool == false)
          {
             sBool = true;
@@ -99,22 +98,22 @@ public class PlayerController : MonoBehaviour
          }
       }
 
-      if (_keyboard.tKey.wasPressedThisFrame) { spawnObjectMethod(Takrør); }
+      if (_keyboard.tKey.wasPressedThisFrame) { spawnObjectMethod(takrør); }
       if (_keyboard.uKey.wasPressedThisFrame)
       {
-         spawnObjectMethod(Ursinia);
+         spawnObjectMethod(ursinia);
          
          if (saBool)
          {
-            spawnObjectMethod(Sau);
+            spawnObjectMethod(sau);
             saBool = false;
          }
       }
-      if (_keyboard.vKey.wasPressedThisFrame) { spawnObjectMethod(Vivendel); }
-      if (_keyboard.wKey.wasPressedThisFrame) { spawnObjectMethod(Wandflower); }
-      if (_keyboard.xKey.wasPressedThisFrame) { spawnObjectMethod(Xeranthemum_annuum); }
-      if (_keyboard.yKey.wasPressedThisFrame) { spawnObjectMethod(Yarrow); }
-      if (_keyboard.zKey.wasPressedThisFrame) { spawnObjectMethod(Zantedeschia); }
+      if (_keyboard.vKey.wasPressedThisFrame) { spawnObjectMethod(vivendel); }
+      if (_keyboard.wKey.wasPressedThisFrame) { spawnObjectMethod(wandflower); }
+      if (_keyboard.xKey.wasPressedThisFrame) { spawnObjectMethod(xeranthemumAnnuum); }
+      if (_keyboard.yKey.wasPressedThisFrame) { spawnObjectMethod(yarrow); }
+      if (_keyboard.zKey.wasPressedThisFrame) { spawnObjectMethod(zantedeschia); }
       
    }
    
