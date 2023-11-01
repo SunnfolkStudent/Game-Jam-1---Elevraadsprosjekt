@@ -26,7 +26,14 @@ public class Sau : MonoBehaviour
         }
         else
         {
-            flower = GameObject.FindGameObjectWithTag("Flower").transform;
+            if (GameObject.FindGameObjectWithTag("Flower"))
+            {
+                flower = GameObject.FindGameObjectWithTag("Flower").transform;
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }
