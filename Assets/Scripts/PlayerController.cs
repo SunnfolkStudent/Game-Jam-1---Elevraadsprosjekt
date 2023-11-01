@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
    public GameObject Rose_Oransj;
    public GameObject Syrin;
    public GameObject Takrør;
-   [FormerlySerializedAs("Urisina")] public GameObject Ursinia;
+   public GameObject Ursinia;
    public GameObject Vivendel;
    public GameObject Wandflower;
    public GameObject Xeranthemum_annuum;
@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
 
    public void Update()
    {
-      if (_keyboard.aKey.wasPressedThisFrame)
+      if (_keyboard.aKey.wasPressedThisFrame) 
       {
          spawnObjectMethodAkeleie();
       }
@@ -335,102 +335,72 @@ public class PlayerController : MonoBehaviour
    public void spawnObjectMethodLøvetann()
    {
       MeshCollider c = quad.GetComponent<MeshCollider>();
-      float screenX, screenY;
-      Vector2 pos;
-      
-      screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
-      screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
-      pos = new Vector2(screenX, screenY);
-         
+      var screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
+      var screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
+      var pos = new Vector2(screenX, screenY);
       Instantiate(Løvetann, pos, Løvetann.transform.rotation);
    }
    
    public void spawnObjectMethodMarianøkleblom()
    {
       MeshCollider c = quad.GetComponent<MeshCollider>();
-      float screenX, screenY;
-      Vector2 pos;
-      
-      screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
-      screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
-      pos = new Vector2(screenX, screenY);
-         
+      var screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
+      var screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
+      var pos = new Vector2(screenX, screenY);
       Instantiate(Marianøkleblom, pos, Marianøkleblom.transform.rotation);
    }
    
    public void spawnObjectMethodNikkebrønsle()
    {
       MeshCollider c = quad.GetComponent<MeshCollider>();
-      float screenX, screenY;
-      Vector2 pos;
-      
-      screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
-      screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
-      pos = new Vector2(screenX, screenY);
-         
+      var screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
+      var screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
+      var pos = new Vector2(screenX, screenY);
       Instantiate(Nikkebrønsle, pos, Nikkebrønsle.transform.rotation);
    }
    
    public void spawnObjectMethodOksetunge()
    {
       MeshCollider c = quad.GetComponent<MeshCollider>();
-      float screenX, screenY;
-      Vector2 pos;
-      
-      screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
-      screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
-      pos = new Vector2(screenX, screenY);
-         
+      var screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
+      var screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
+      var pos = new Vector2(screenX, screenY);
       Instantiate(Oksetunge, pos, Oksetunge.transform.rotation);
    }
    
    public void spawnObjectMethodPrestekrage()
    {
       MeshCollider c = quad.GetComponent<MeshCollider>();
-      float screenX, screenY;
-      Vector2 pos;
-      
-      screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
-      screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
-      pos = new Vector2(screenX, screenY);
-         
+      var screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
+      var screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
+      var pos = new Vector2(screenX, screenY);
       Instantiate(Prestekrage, pos, Prestekrage.transform.rotation);
    }
    
    public void spawnObjectMethodQueen_of_the_Prairie()
    {
       MeshCollider c = quad.GetComponent<MeshCollider>();
-      float screenX, screenY;
-      Vector2 pos;
-      
-      screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
-      screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
-      pos = new Vector2(screenX, screenY);
-         
+      var screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
+      var screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
+      var pos = new Vector2(screenX, screenY);
       Instantiate(Queen_of_the_Prairie, pos, Queen_of_the_Prairie.transform.rotation);
    }
    
    public void spawnObjectMethodRose()
    {
       MeshCollider c = quad.GetComponent<MeshCollider>();
-      float screenX, screenY;
-      Vector2 pos;
-      
-      screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
-      screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
-      pos = new Vector2(screenX, screenY);
-      
+      var screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
+      var screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
+      var pos = new Vector2(screenX, screenY);
       Instantiate(Rose_Oransj, pos, Rose_Oransj.transform.rotation);
    }
    
    public void spawnObjectMethodSyrin()
    {
       MeshCollider c = quad.GetComponent<MeshCollider>();
-
       var screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
       var screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
       var pos = new Vector2(screenX, screenY);
-         
       Instantiate(Syrin, pos, Syrin.transform.rotation);
       if (s_Bool == false)
       {
@@ -446,26 +416,19 @@ public class PlayerController : MonoBehaviour
    private void spawnObjectMethodTakrør()
    {
       MeshCollider c = quad.GetComponent<MeshCollider>();
-
       var screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
       var screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
       var pos = new Vector2(screenX, screenY);
-         
       Instantiate(Takrør, pos, Takrør.transform.rotation);
    }
    
    public void spawnObjectMethodUrsinia()
    {
       MeshCollider c = quad.GetComponent<MeshCollider>();
-      float screenX, screenY;
-      Vector2 pos;
-      
-      screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
-      screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
-      pos = new Vector2(screenX, screenY);
-         
+      var screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
+      var screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
+      var pos = new Vector2(screenX, screenY);
       Instantiate(Ursinia, pos, Ursinia.transform.rotation);
-      
       if (s_a_Bool)
       {
          Instantiate(Sau, pos, Sau.transform.rotation);
@@ -476,104 +439,72 @@ public class PlayerController : MonoBehaviour
    public void spawnObjectMethodVivendel()
    {
       MeshCollider c = quad.GetComponent<MeshCollider>();
-      float screenX, screenY;
-      Vector2 pos;
-      
-      screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
-      screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
-      pos = new Vector2(screenX, screenY);
-         
+      var screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
+      var screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
+      var pos = new Vector2(screenX, screenY);
       Instantiate(Vivendel, pos, Vivendel.transform.rotation);
    }
    
    public void spawnObjectMethodWandflower()
    {
       MeshCollider c = quad.GetComponent<MeshCollider>();
-      float screenX, screenY;
-      Vector2 pos;
-      
-      screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
-      screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
-      pos = new Vector2(screenX, screenY);
-         
+      var screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
+      var screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
+      var pos = new Vector2(screenX, screenY);
       Instantiate(Wandflower, pos, Wandflower.transform.rotation);
    }
    
    public void spawnObjectMethodX()
    {
       MeshCollider c = quad.GetComponent<MeshCollider>();
-      float screenX, screenY;
-      Vector2 pos;
-      
-      screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
-      screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
-      pos = new Vector2(screenX, screenY);
-         
+      var screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
+      var screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
+      var pos = new Vector2(screenX, screenY);
       Instantiate(Xeranthemum_annuum, pos, Xeranthemum_annuum.transform.rotation);
    }
    
    public void spawnObjectMethodYarrow()
    {
       MeshCollider c = quad.GetComponent<MeshCollider>();
-      float screenX, screenY;
-      Vector2 pos;
-      
-      screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
-      screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
-      pos = new Vector2(screenX, screenY);
-         
+      var screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
+      var screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
+      var pos = new Vector2(screenX, screenY);
       Instantiate(Yarrow, pos, Yarrow.transform.rotation);
    }
    
    public void spawnObjectMethodZ()
    {
       MeshCollider c = quad.GetComponent<MeshCollider>();
-      float screenX, screenY;
-      Vector2 pos;
-      
-      screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
-      screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
-      pos = new Vector2(screenX, screenY);
-         
+      var screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
+      var screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
+      var pos = new Vector2(screenX, screenY);
       Instantiate(Zantedeschia, pos, Zantedeschia.transform.rotation);
    }
    
    public void spawnObjectMethodÆdelmynt()
    {
       MeshCollider c = quad.GetComponent<MeshCollider>();
-      float screenX, screenY;
-      Vector2 pos;
-      
-      screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
-      screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
-      pos = new Vector2(screenX, screenY);
-         
+      var screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
+      var screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
+      var pos = new Vector2(screenX, screenY);
       Instantiate(Ædelmynt, pos, Ædelmynt.transform.rotation);
    }
    
    public void spawnObjectMethodØrevier()
    {
       MeshCollider c = quad.GetComponent<MeshCollider>();
-      float screenX, screenY;
-      Vector2 pos;
-      
-      screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
-      screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
-      pos = new Vector2(screenX, screenY);
-         
+      var screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
+      var screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
+      var pos = new Vector2(screenX, screenY);
       Instantiate(Ørevier, pos, Ørevier.transform.rotation);
    }
    
    public void spawnObjectMethodÅkerbær()
    {
       MeshCollider c = quad.GetComponent<MeshCollider>();
-      float screenX, screenY;
-      Vector2 pos;
-      
-      screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
-      screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
-      pos = new Vector2(screenX, screenY);
-         
+      var screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
+      var screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
+      var pos = new Vector2(screenX, screenY);
       Instantiate(Åkerbær, pos, Åkerbær.transform.rotation);
    }
 }
