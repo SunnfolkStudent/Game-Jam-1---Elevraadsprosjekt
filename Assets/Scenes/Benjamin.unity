@@ -129,7 +129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 97281789}
-  - component: {fileID: 97281788}
+  - component: {fileID: 97281790}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -137,51 +137,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &97281788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 97281787}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee9902a216c7aff46b03ddb84a2d9619, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  quad: {fileID: 933905381}
-  Sau: {fileID: 2293429619917782484, guid: 1f41c3d728910424e8a22f6fef17667f, type: 3}
-  s_Bool: 0
-  s_a_Bool: 0
-  Akeleie: {fileID: 8656463509512723017, guid: 8e428c4cf89cc8a419448dfde94172ad, type: 3}
-  "Bl\xE5klokke": {fileID: 6702933428137557020, guid: def693b6c1d3b8547b5645fb625fb3cf, type: 3}
-  Cyathium: {fileID: 5534566295381341403, guid: b0f82eca435d1b742a704a1c57da7657, type: 3}
-  "Dvergbj\xF8rk": {fileID: 3789304714320866879, guid: 54a1d94d604572a4d8ead5141a5c81f8, type: 3}
-  Einer: {fileID: 0}
-  "Fjellmarik\xE5pe": {fileID: 0}
-  Gran: {fileID: 244349137997307875, guid: 5999d5bee9f3c1043b48b450babb1122, type: 3}
-  Hvitveis: {fileID: 8983975590900626124, guid: 3c1b9475415deaa4c88161cf4d54bedb, type: 3}
-  Istevier: {fileID: 0}
-  Jonsokkoll: {fileID: 1121686243634700044, guid: aec2880a73fc2b248bfe5529deb1ba6e, type: 3}
-  Kattehale: {fileID: 8160204309008892944, guid: d4739dddf7fe2a74ea9bde573f003260, type: 3}
-  "L\xF8vetann": {fileID: 9052705558576793153, guid: bbbbfd93bbec63149ba7eaaa53a1e015, type: 3}
-  "Marian\xF8kleblom": {fileID: 0}
-  "Nikkebr\xF8nsle": {fileID: 0}
-  Oksetunge: {fileID: 6310892194089187177, guid: 3c622340fcd084c4e9187d0b0719c4a0, type: 3}
-  Prestekrage: {fileID: 0}
-  Queen_of_the_Prairie: {fileID: 0}
-  Rose_Oransj: {fileID: 950924196}
-  Syrin: {fileID: 850739363430868347, guid: 08ef256031b00ec40b650a4902fbb36c, type: 3}
-  "Takr\xF8r": {fileID: 0}
-  Ursinia: {fileID: 4376483002834565970, guid: 449626f0eed16264c905d37359011490, type: 3}
-  Vivendel: {fileID: 0}
-  Wandflower: {fileID: 0}
-  Xeranthemum_annuum: {fileID: 0}
-  Yarrow: {fileID: 0}
-  Zantedeschia: {fileID: 0}
-  "\xC6delmynt": {fileID: 0}
-  "\xD8revier": {fileID: 0}
-  "\xC5kerb\xE6r": {fileID: 0}
 --- !u!4 &97281789
 Transform:
   m_ObjectHideFlags: 0
@@ -197,6 +152,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &97281790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97281787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f79e45e9d4e225a40b25b5239143dadb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quad: {fileID: 933905381}
+  c: {fileID: 933905382}
+  Sau: {fileID: 2293429619917782484, guid: 1f41c3d728910424e8a22f6fef17667f, type: 3}
+  sBool: 0
+  saBool: 0
+  Akeleie: {fileID: 8656463509512723017, guid: 8e428c4cf89cc8a419448dfde94172ad, type: 3}
+  "Bl\xE5klokke": {fileID: -2253911629886400664, guid: 74e8516e2eb44174193c917bf666e555, type: 3}
+  Cyathium: {fileID: -2253911629886400664, guid: 746f8d271e267a84aa41fd31e40ecb97, type: 3}
+  "Dvergbj\xF8rk": {fileID: 3789304714320866879, guid: 54a1d94d604572a4d8ead5141a5c81f8, type: 3}
+  Einer: {fileID: 0}
+  "Fjellmarik\xE5pe": {fileID: 0}
+  Gran: {fileID: 244349137997307875, guid: 5999d5bee9f3c1043b48b450babb1122, type: 3}
+  Hvitveis: {fileID: 8983975590900626124, guid: 3c1b9475415deaa4c88161cf4d54bedb, type: 3}
+  Istevier: {fileID: 0}
+  Jonsokkoll: {fileID: 1121686243634700044, guid: aec2880a73fc2b248bfe5529deb1ba6e, type: 3}
+  Kattehale: {fileID: 8160204309008892944, guid: d4739dddf7fe2a74ea9bde573f003260, type: 3}
+  "L\xF8vetann": {fileID: 9052705558576793153, guid: bbbbfd93bbec63149ba7eaaa53a1e015, type: 3}
+  "Marian\xF8kleblom": {fileID: 0}
+  "Nikkebr\xF8nsle": {fileID: 0}
+  Oksetunge: {fileID: 6310892194089187177, guid: 3c622340fcd084c4e9187d0b0719c4a0, type: 3}
+  Prestekrage: {fileID: 0}
+  Queen_of_the_Prairie: {fileID: 0}
+  Rose_Oransj: {fileID: 8573720130184866931, guid: 15ce0180a23ad4b408fd9857870e1ca0, type: 3}
+  Syrin: {fileID: 850739363430868347, guid: 08ef256031b00ec40b650a4902fbb36c, type: 3}
+  "Takr\xF8r": {fileID: 0}
+  Ursinia: {fileID: 4376483002834565970, guid: 449626f0eed16264c905d37359011490, type: 3}
+  Vivendel: {fileID: 0}
+  Wandflower: {fileID: 0}
+  Xeranthemum_annuum: {fileID: 0}
+  Yarrow: {fileID: 0}
+  Zantedeschia: {fileID: 0}
+  "\xC6delmynt": {fileID: 0}
+  "\xD8revier": {fileID: 0}
+  "\xC5kerb\xE6r": {fileID: 0}
 --- !u!1001 &432412531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -207,7 +208,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2284136690459095015, guid: d290d2c172a2b374d8633577abede049, type: 3}
       propertyPath: m_LocalScale.x
-      value: 20
+      value: 18.017876
       objectReference: {fileID: 0}
     - target: {fileID: 2284136690459095015, guid: d290d2c172a2b374d8633577abede049, type: 3}
       propertyPath: m_LocalScale.y
@@ -215,7 +216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2284136690459095015, guid: d290d2c172a2b374d8633577abede049, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.0283
       objectReference: {fileID: 0}
     - target: {fileID: 2284136690459095015, guid: d290d2c172a2b374d8633577abede049, type: 3}
       propertyPath: m_LocalPosition.y
@@ -355,73 +356,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2579926573459996157, guid: d290d2c172a2b374d8633577abede049, type: 3}
   m_PrefabInstance: {fileID: 432412531}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &950924196 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -2253911629886400664, guid: dc4e0f944006bf04985cee9a5010878e, type: 3}
-  m_PrefabInstance: {fileID: 979119083}
+--- !u!64 &933905382 stripped
+MeshCollider:
+  m_CorrespondingSourceObject: {fileID: 7809263195031848971, guid: d290d2c172a2b374d8633577abede049, type: 3}
+  m_PrefabInstance: {fileID: 432412531}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &950924198 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: dc4e0f944006bf04985cee9a5010878e, type: 3}
-  m_PrefabInstance: {fileID: 979119083}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &979119083
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -2253911629886400664, guid: dc4e0f944006bf04985cee9a5010878e, type: 3}
-      propertyPath: m_Name
-      value: rose_orange_v1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7878350319992209165, guid: dc4e0f944006bf04985cee9a5010878e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7878350319992209165, guid: dc4e0f944006bf04985cee9a5010878e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7878350319992209165, guid: dc4e0f944006bf04985cee9a5010878e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7878350319992209165, guid: dc4e0f944006bf04985cee9a5010878e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7878350319992209165, guid: dc4e0f944006bf04985cee9a5010878e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7878350319992209165, guid: dc4e0f944006bf04985cee9a5010878e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7878350319992209165, guid: dc4e0f944006bf04985cee9a5010878e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7878350319992209165, guid: dc4e0f944006bf04985cee9a5010878e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7878350319992209165, guid: dc4e0f944006bf04985cee9a5010878e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7878350319992209165, guid: dc4e0f944006bf04985cee9a5010878e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: -8435245712485981826, guid: dc4e0f944006bf04985cee9a5010878e, type: 3}
 --- !u!1 &1930121083
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,10 +430,10 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 950924198}
+  m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 60.000004
-    OrthographicSize: 17
+    OrthographicSize: 5
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -523,6 +462,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94a7878731b8cab47983f170d3b274e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  parallaxEffect: 0
 --- !u!1 &2118192331
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,7 +560,7 @@ Camera:
   far clip plane: 1000
   field of view: 60.000004
   orthographic: 1
-  orthographic size: 17
+  orthographic size: 5
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -755,6 +696,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 2118192335}
   - {fileID: 432412531}
-  - {fileID: 979119083}
   - {fileID: 97281789}
   - {fileID: 9160132124816552885}
