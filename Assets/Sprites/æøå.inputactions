@@ -1,1 +1,80 @@
-{}
+{
+    "name": "æøå",
+    "maps": [
+        {
+            "name": "æøå",
+            "id": "6c009731-4f68-4c10-9f89-56e090de5a97",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "c46d3446-8fd4-43b5-935b-9ddd3aeddb57",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "New action1",
+                    "type": "Button",
+                    "id": "1b07acae-7e62-4bac-a7ae-b9984da3985a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "New action2",
+                    "type": "Button",
+                    "id": "bcbeb865-9e11-4c03-918d-42ddd1d4c4a0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c439bc2f-f17d-485a-9b0d-0223beeb820c",
+                    "path": "<Keyboard>/#(Æ)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "æøå",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "16841a13-dc57-4f99-b9c7-25d48cd76c91",
+                    "path": "<Keyboard>/#(Ø)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "æøå",
+                    "action": "New action1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "618a1313-6abc-45f6-9975-fc8d60c85679",
+                    "path": "<Keyboard>/#(Å)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "æøå",
+                    "action": "New action2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "æøå",
+            "bindingGroup": "æøå",
+            "devices": []
+        }
+    ]
+}
