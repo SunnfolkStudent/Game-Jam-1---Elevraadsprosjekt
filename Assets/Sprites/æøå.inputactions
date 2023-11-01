@@ -2,11 +2,11 @@
     "name": "æøå",
     "maps": [
         {
-            "name": "æøå",
+            "name": "Hjelp",
             "id": "6c009731-4f68-4c10-9f89-56e090de5a97",
             "actions": [
                 {
-                    "name": "New action",
+                    "name": "Æ",
                     "type": "Button",
                     "id": "c46d3446-8fd4-43b5-935b-9ddd3aeddb57",
                     "expectedControlType": "Button",
@@ -15,7 +15,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "New action1",
+                    "name": "Ø",
                     "type": "Button",
                     "id": "1b07acae-7e62-4bac-a7ae-b9984da3985a",
                     "expectedControlType": "Button",
@@ -24,7 +24,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "New action2",
+                    "name": "Å",
                     "type": "Button",
                     "id": "bcbeb865-9e11-4c03-918d-42ddd1d4c4a0",
                     "expectedControlType": "Button",
@@ -41,7 +41,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "æøå",
-                    "action": "New action",
+                    "action": "Æ",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -52,7 +52,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "æøå",
-                    "action": "New action1",
+                    "action": "Ø",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -63,7 +63,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "æøå",
-                    "action": "New action2",
+                    "action": "Å",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
