@@ -175,11 +175,7 @@ public class PlayerController : MonoBehaviour
       {
          spawnObjectMethodZ();
       }
-
-      if (_keyboard.)
-      {
-         
-      }
+      
    }
    
    public void spawnObjectMethodAkeleie()
