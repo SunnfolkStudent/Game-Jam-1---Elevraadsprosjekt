@@ -1,13 +1,15 @@
 fileFormatVersion: 2
-guid: ee9902a216c7aff46b03ddb84a2d9619
+guid: f79e45e9d4e225a40b25b5239143dadb
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
   - quad: {instanceID: 0}
   - Akeleie: {instanceID: 0}
-  - "Bl\xE5klokke": {fileID: -2253911629886400664, guid: 74e8516e2eb44174193c917bf666e555, type: 3}
-  - Cyathium: {fileID: -2253911629886400664, guid: 746f8d271e267a84aa41fd31e40ecb97, type: 3}
+  - "Bl\xE5klokke": {fileID: -2253911629886400664, guid: 74e8516e2eb44174193c917bf666e555,
+      type: 3}
+  - Cyathium: {fileID: -2253911629886400664, guid: 746f8d271e267a84aa41fd31e40ecb97,
+      type: 3}
   - "Dvergbj\xF8rk": {instanceID: 0}
   - Einer: {instanceID: 0}
   - "Fjellmarik\xE5pe": {instanceID: 0}
