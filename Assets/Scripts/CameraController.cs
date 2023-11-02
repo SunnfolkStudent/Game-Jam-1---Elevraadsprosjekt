@@ -1,32 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    private float _length, _startpos;
-    public GameObject cam;
-    public float parallaxEffect;
+    public Transform target;
+    public float smoothSpeed = 0.05f;
+    public Vector3 offset;
+    private Vector3 _velocity = Vector3.zero;
     
-
-    private void Start()
+    private void LateUpdate()
     {
-        _startpos = transform.position.x;
-        _length = GetComponent<SpriteRenderer>().bounds.size.x;
-        cam = Camera.main.gameObject;  // Camera.main.gameobject
-        
-    }
-
-    private void FixedUpdate()
-    {
-        float temp = (cam.transform.position.x * (1 - parallaxEffect));
-        float dist = (cam.transform.position.x * parallaxEffect);
-
-        transform.position = new Vector3(_startpos + dist, transform.position.y, transform.position.z);
-
-        if (temp > _startpos + _length)
-        {_startpos += _length;}
-        else if (temp < _startpos - _length)
-        {_startpos -= _length;}
+        Vector3 desiredPosition = target.position + offset;
+        Vector3 smoothedPosition = Vector3.SmoothDamp(transform.position, desiredPosition, ref _velocity, smoothSpeed);
+        transform.position = smoothedPosition;
     }
 }
