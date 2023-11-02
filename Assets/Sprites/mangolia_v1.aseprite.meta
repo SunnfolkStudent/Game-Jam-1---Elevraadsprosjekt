@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a82b8d3285dab1746bf8327350c38005
+guid: 8f66e4487665c7e45b888bb25f75f66f
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638345189318620714
+  platformSettingsDirtyTick: 638345188241721890
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: fjellmarikape_v1
+  - name: mangolia_v1
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.4666667, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 14
-      height: 16
-    spriteID: aced80be47a0bda43b6123d6e38b292f
+      width: 15
+      height: 15
+    spriteID: 63277d9b6161eed4dae5586c2394c0e5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -142,20 +142,20 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1375748487
-    name: fjellmarikape_v1
+    guid: -1900863602
+    name: mangolia_v1
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: fjellmarikape_v1
+    - name: mangolia_v1
       frameIndex: 0
       cellRect:
         x: 1
         y: 0
-        width: 14
-        height: 16
-      spriteId: aced80be47a0bda43b6123d6e38b292f
+        width: 15
+        height: 15
+      spriteId: 63277d9b6161eed4dae5586c2394c0e5
     linkedCells: []
     parentIndex: -1
   platformSettings:
