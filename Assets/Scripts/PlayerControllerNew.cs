@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Random = UnityEngine.Random;
@@ -58,6 +59,7 @@ public class PlayerControllerNew : MonoBehaviour
    public GameObject ørevier;
    public GameObject åkerbær;
 
+   public List<GameObject> activeObjects;
    public void Start()
    {
       c = quad.GetComponent<MeshCollider>();
@@ -362,6 +364,7 @@ public class PlayerControllerNew : MonoBehaviour
       var screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
       var pos = new Vector2(screenX, screenY);
 
-      Instantiate(prefab, pos, prefab.transform.rotation);
+      var clone = Instantiate(prefab, pos, prefab.transform.rotation);
+      activeObjects.Add(clone);
    }
 }
