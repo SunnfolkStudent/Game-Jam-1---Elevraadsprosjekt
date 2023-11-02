@@ -19,6 +19,7 @@ public class PlayerControllerNew : MonoBehaviour
    public int hTeljar;
    public int lTeljar;
    public int vTeljar;
+   public bool AlleBools;
    
 
    public GameObject akeleie;
@@ -67,10 +68,25 @@ public class PlayerControllerNew : MonoBehaviour
       saBool = false;
       aBool = false;
       oBool = false;
+      AlleBools = false;
    }
 
    public void Update()
    {
+      if (AlleBools)
+      {
+         sBool = false;
+         saBool = false;
+         aBool = false;
+         oBool = false;
+         
+         
+         AlleBools = false;
+      }
+      if (_keyboard.escapeKey.wasPressedThisFrame)
+      {
+         Application.Quit();
+      }
       if (_keyboard.aKey.wasPressedThisFrame)
       {
          spawnObjectMethod(akeleie);
@@ -96,16 +112,19 @@ public class PlayerControllerNew : MonoBehaviour
       if (_keyboard.bKey.wasPressedThisFrame)
       {
          spawnObjectMethod(blåklokke);
+         AlleBools = true;
       }
 
       if (_keyboard.cKey.wasPressedThisFrame)
       {
          spawnObjectMethod(cyathium);
+         AlleBools = true;
       }
 
       if (_keyboard.dKey.wasPressedThisFrame)
       {
          spawnObjectMethod(dvergbjørk);
+         AlleBools = true;
       }
 
       if (_keyboard.eKey.wasPressedThisFrame)
@@ -126,6 +145,7 @@ public class PlayerControllerNew : MonoBehaviour
          }
          else
          {
+            AlleBools = true;
             if (eTeljar == 0)
             {
                spawnObjectMethod(einer);
@@ -143,6 +163,7 @@ public class PlayerControllerNew : MonoBehaviour
       if (_keyboard.fKey.wasPressedThisFrame)
       {
          spawnObjectMethod(fjellmarikåpe);
+         AlleBools = true;
       }
 
       if (_keyboard.gKey.wasPressedThisFrame)
@@ -162,10 +183,12 @@ public class PlayerControllerNew : MonoBehaviour
             spawnObjectMethod(gran);
             gTeljar = 0;
          }
+         AlleBools = true;
       }
 
       if (_keyboard.hKey.wasPressedThisFrame)
       {
+         AlleBools = true;
          if (hTeljar == 0)
          {
             spawnObjectMethod(hjarteblome);
@@ -182,20 +205,24 @@ public class PlayerControllerNew : MonoBehaviour
       if (_keyboard.iKey.wasPressedThisFrame)
       {
          spawnObjectMethod(istevier);
+         AlleBools = true;
       }
 
       if (_keyboard.jKey.wasPressedThisFrame)
       {
          spawnObjectMethod(jonsokkoll);
+         AlleBools = true;
       }
 
       if (_keyboard.kKey.wasPressedThisFrame)
       {
          spawnObjectMethod(kattehale);
+         AlleBools = true;
       }
 
       if (_keyboard.lKey.wasPressedThisFrame)
       {
+         AlleBools = true;
          if (lTeljar == 0)
          {
             spawnObjectMethod(løvetann);
@@ -212,51 +239,64 @@ public class PlayerControllerNew : MonoBehaviour
       if (_keyboard.mKey.wasPressedThisFrame)
       {
          spawnObjectMethod(marianøkleblom);
+         AlleBools = true;
       }
 
       if (_keyboard.nKey.wasPressedThisFrame)
       {
          spawnObjectMethod(nikkebrønsle);
+         AlleBools = true;
       }
 
       if (_keyboard.oKey.wasPressedThisFrame)
       {
          spawnObjectMethod(oksetunge);
-         oBool = true;
+         if (oBool == false)
+         {
+            oBool = true;
+         }
+         else
+         {
+            AlleBools = true;
+         }
       }
 
       if (_keyboard.pKey.wasPressedThisFrame)
       {
          spawnObjectMethod(prestekrage);
+         AlleBools = true;
       }
 
       if (_keyboard.qKey.wasPressedThisFrame)
       {
          spawnObjectMethod(queenOfThePrairie);
+         AlleBools = true;
       }
 
       if (_keyboard.rKey.wasPressedThisFrame)
       {
          spawnObjectMethod(roseOransj);
+         AlleBools = true;
       }
 
       if (_keyboard.sKey.wasPressedThisFrame)
       {
          spawnObjectMethod(syrin);
-         if (sBool == false)
+         if (sBool)
          {
             sBool = true;
          }
          else
          {
             sBool = true;
-            saBool = false;
+            AlleBools = true;
          }
       }
 
       if (_keyboard.tKey.wasPressedThisFrame)
       {
          spawnObjectMethod(takrør);
+         AlleBools = true;
       }
 
       if (_keyboard.uKey.wasPressedThisFrame)
@@ -268,15 +308,15 @@ public class PlayerControllerNew : MonoBehaviour
             spawnObjectMethod(sau);
             saBool = false;
          }
-
-         if (sBool)
+         else
          {
-            sBool = false;
+            AlleBools = true;
          }
       }
 
       if (_keyboard.vKey.wasPressedThisFrame)
       {
+         AlleBools = true;
          if (lTeljar == 0)
          {
             spawnObjectMethod(vivendel);
@@ -292,21 +332,25 @@ public class PlayerControllerNew : MonoBehaviour
       if (_keyboard.wKey.wasPressedThisFrame)
       {
          spawnObjectMethod(wandflower);
+         AlleBools = true;
       }
 
       if (_keyboard.xKey.wasPressedThisFrame)
       {
          spawnObjectMethod(xeranthemumAnnuum);
+         AlleBools = true;
       }
 
       if (_keyboard.yKey.wasPressedThisFrame)
       {
          spawnObjectMethod(yarrow);
+         AlleBools = true;
       }
 
       if (_keyboard.zKey.wasPressedThisFrame)
       {
          spawnObjectMethod(zantedeschia);
+         AlleBools = true;
       }
 
    }
