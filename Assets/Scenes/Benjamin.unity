@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 97281790}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -198,6 +198,7 @@ MonoBehaviour:
   "\xE6delmynt": {fileID: 0}
   "\xF8revier": {fileID: 0}
   "\xE5kerb\xE6r": {fileID: 0}
+  activeObjects: []
 --- !u!1001 &432412531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -273,6 +274,11 @@ MeshCollider:
   m_CorrespondingSourceObject: {fileID: 7809263195031848971, guid: d290d2c172a2b374d8633577abede049, type: 3}
   m_PrefabInstance: {fileID: 432412531}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &933905385 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2284136690459095015, guid: d290d2c172a2b374d8633577abede049, type: 3}
+  m_PrefabInstance: {fileID: 432412531}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1053519747
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -330,11 +336,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: def693b6c1d3b8547b5645fb625fb3cf, type: 3}
---- !u!4 &1313877387 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5830016369847784569, guid: def693b6c1d3b8547b5645fb625fb3cf, type: 3}
-  m_PrefabInstance: {fileID: 1053519747}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1957216111
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,7 +475,7 @@ GameObject:
   - component: {fileID: 2118192335}
   - component: {fileID: 2118192334}
   - component: {fileID: 2118192333}
-  - component: {fileID: 2118192336}
+  - component: {fileID: 2118192337}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Untagged
@@ -525,7 +526,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2
+  orthographic size: 3.65
   m_Depth: 20
   m_CullingMask:
     serializedVersion: 2
@@ -556,7 +557,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2118192336
+--- !u!114 &2118192337
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -565,12 +566,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2118192331}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94a7878731b8cab47983f170d3b274e5, type: 3}
+  m_Script: {fileID: 11500000, guid: b5c36d41bb5a8ba4e8c8a2b0fa6af0b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1313877387}
-  smoothSpeed: 3
-  offset: {x: 0.5, y: 0.5, z: -5}
+  cam: {fileID: 2118192334}
+  spawn: {fileID: 933905385}
+  _spawnStartScale: {x: 0, y: 0}
+  player: {fileID: 97281790}
+  scaleMultiplier: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
