@@ -161,7 +161,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 97281787}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f79e45e9d4e225a40b25b5239143dadb, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f29842c7bd43864e9db6b3843967117, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   quad: {fileID: 933905381}
@@ -169,18 +169,31 @@ MonoBehaviour:
   sau: {fileID: 2293429619917782484, guid: 1f41c3d728910424e8a22f6fef17667f, type: 3}
   sBool: 0
   saBool: 0
+  aBool: 0
+  oBool: 0
+  eTeljar: 0
+  gTeljar: 0
+  hTeljar: 0
+  lTeljar: 0
+  vTeljar: 0
+  AlleBools: 0
   akeleie: {fileID: 8656463509512723017, guid: 8e428c4cf89cc8a419448dfde94172ad, type: 3}
   "bl\xE5klokke": {fileID: 6702933428137557020, guid: def693b6c1d3b8547b5645fb625fb3cf, type: 3}
   cyathium: {fileID: 5534566295381341403, guid: b0f82eca435d1b742a704a1c57da7657, type: 3}
   "dvergbj\xF8rk": {fileID: 3789304714320866879, guid: 54a1d94d604572a4d8ead5141a5c81f8, type: 3}
   einer: {fileID: 3906909508858877615, guid: e326026b6f1b7d246afb73212825c51d, type: 3}
+  engeltrompet: {fileID: 3117950853980155808, guid: f0b58bf7cb9ce034a869309cee0cbc1b, type: 3}
   "fjellmarik\xE5pe": {fileID: 6820388281484911013, guid: 203c13f9672de384fb52eb3a271ef7d8, type: 3}
   gran: {fileID: 244349137997307875, guid: 5999d5bee9f3c1043b48b450babb1122, type: 3}
+  geranium: {fileID: 1857783000724843063, guid: 3cf7017b9c0826d40836d1e27920605f, type: 3}
+  giftlilje: {fileID: 61521611551086958, guid: ca7ef7092d6fe734b83e9b2e6cae8be6, type: 3}
   hvitveis: {fileID: 8983975590900626124, guid: 3c1b9475415deaa4c88161cf4d54bedb, type: 3}
+  hjarteblome: {fileID: 9132079821440111969, guid: 5a34d0d7804d35d4eb82d5ec800db4b4, type: 3}
   istevier: {fileID: 9107902486478855532, guid: 93dc2f206aaf6ae44b23e8964a93e372, type: 3}
   jonsokkoll: {fileID: 1121686243634700044, guid: aec2880a73fc2b248bfe5529deb1ba6e, type: 3}
   kattehale: {fileID: 8160204309008892944, guid: d4739dddf7fe2a74ea9bde573f003260, type: 3}
   "l\xF8vetann": {fileID: 9052705558576793153, guid: bbbbfd93bbec63149ba7eaaa53a1e015, type: 3}
+  liljekonvall: {fileID: 4040126844025333715, guid: c6f59d257372354468d971b3471bae05, type: 3}
   "marian\xF8kleblom": {fileID: 5626433645716182675, guid: 71da2125842f1c045aa18fd3a483d5f4, type: 3}
   "nikkebr\xF8nsle": {fileID: 731751724478672324, guid: 10413cf6c17c58444a602b2703e57a39, type: 3}
   oksetunge: {fileID: 6310892194089187177, guid: 3c622340fcd084c4e9187d0b0719c4a0, type: 3}
@@ -191,6 +204,7 @@ MonoBehaviour:
   "takr\xF8r": {fileID: 3188599658585890207, guid: 603bfb819bd444343a9df16424a7b080, type: 3}
   ursinia: {fileID: 4376483002834565970, guid: 449626f0eed16264c905d37359011490, type: 3}
   vivendel: {fileID: 4462962934952693584, guid: 0e4ac32a17afc654dbbfe42a22a356a9, type: 3}
+  venus: {fileID: 1698225962166735587, guid: 84eac26dba272e846abdfca940b0dd3a, type: 3}
   wandflower: {fileID: 6297507480776365123, guid: e6fccbf724ffb8b4d8bc580fc0b20a47, type: 3}
   xeranthemumAnnuum: {fileID: 4980723395523723266, guid: 6896a41d2b0217548846795563d694e5, type: 3}
   yarrow: {fileID: 2661461214875308461, guid: 90d22a00caf474d4983a02227d3eb572, type: 3}
@@ -279,51 +293,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2284136690459095015, guid: d290d2c172a2b374d8633577abede049, type: 3}
   m_PrefabInstance: {fileID: 432412531}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1439718552
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1439718554}
-  - component: {fileID: 1439718553}
-  m_Layer: 0
-  m_Name: Grid
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!156049354 &1439718553
-Grid:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1439718552}
-  m_Enabled: 1
-  m_CellSize: {x: 1, y: 1, z: 0}
-  m_CellGap: {x: 0, y: 0, z: 0}
-  m_CellLayout: 0
-  m_CellSwizzle: 0
---- !u!4 &1439718554
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1439718552}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1974824658}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1957216111
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,126 +421,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1974824657
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1974824658}
-  - component: {fileID: 1974824660}
-  - component: {fileID: 1974824659}
-  m_Layer: 0
-  m_Name: Tilemap
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1974824658
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1974824657}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1439718554}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!483693784 &1974824659
-TilemapRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1974824657}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 0
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
-  m_MaxChunkCount: 16
-  m_MaxFrameAge: 16
-  m_SortOrder: 0
-  m_Mode: 0
-  m_DetectChunkCullingBounds: 0
-  m_MaskInteraction: 0
---- !u!1839735485 &1974824660
-Tilemap:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1974824657}
-  m_Enabled: 1
-  m_Tiles: {}
-  m_AnimatedTiles: {}
-  m_TileAssetArray: []
-  m_TileSpriteArray: []
-  m_TileMatrixArray: []
-  m_TileColorArray: []
-  m_TileObjectToInstantiateArray: []
-  m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: 0, y: 0, z: 0}
-  m_Size: {x: 0, y: 0, z: 1}
-  m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
-  m_TileOrientation: 0
-  m_TileOrientationMatrix:
-    e00: 1
-    e01: 0
-    e02: 0
-    e03: 0
-    e10: 0
-    e11: 1
-    e12: 0
-    e13: 0
-    e20: 0
-    e21: 0
-    e22: 1
-    e23: 0
-    e30: 0
-    e31: 0
-    e32: 0
-    e33: 1
 --- !u!1 &2118192331
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,7 +433,6 @@ GameObject:
   - component: {fileID: 2118192334}
   - component: {fileID: 2118192333}
   - component: {fileID: 2118192337}
-  - component: {fileID: 2118192338}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Untagged
@@ -683,21 +531,6 @@ MonoBehaviour:
   _spawnStartScale: {x: 0, y: 0}
   player: {fileID: 97281790}
   scaleMultiplier: 0
---- !u!114 &2118192338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2118192331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94a7878731b8cab47983f170d3b274e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  smoothSpeed: 0.05
-  offset: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -706,4 +539,3 @@ SceneRoots:
   - {fileID: 432412531}
   - {fileID: 97281789}
   - {fileID: 1957216113}
-  - {fileID: 1439718554}

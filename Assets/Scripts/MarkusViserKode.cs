@@ -7,7 +7,7 @@ public class MarkusViserKode : MonoBehaviour
 
     public Transform spawn;
     public Vector2 _spawnStartScale;
-    public PlayerController player;
+    public PlayerControllerNew player;
 
     public float scaleMultiplier;
 
@@ -25,13 +25,13 @@ public class MarkusViserKode : MonoBehaviour
         {
             print("grow");
             cam.orthographicSize += scaleMultiplier;
-           /* spawn.localScale = new Vector3(spawn.localScale.x, spawn.localScale.y, spawn.localScale.z-1)*scaleMultiplier; */
+            /* spawn.localScale = new Vector3(spawn.localScale.x, spawn.localScale.y, spawn.localScale.z-1)*scaleMultiplier; */
         }
         else if (player.activeObjects.Count == 0)
         {
             print("reset");
             cam.orthographicSize -= 2 * Time.deltaTime;
-           /* spawn.localScale = new Vector3(10.57f, 6.06f, 1); */
+            /* spawn.localScale = new Vector3(10.57f, 6.06f, 1); */
         }
         
         cam.orthographicSize = Mathf.Clamp(cam.orthographicSize, 2, spawn.localScale.magnitude/4.5f);

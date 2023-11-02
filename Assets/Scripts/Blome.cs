@@ -6,11 +6,11 @@ using UnityEngine;
 public class Blome : MonoBehaviour
 {
 
-    private PlayerController _player;
+    private PlayerControllerNew _player;
 
     private void Start()
     {
-        _player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        _player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerControllerNew>();
     }
 
     private void OnCollisionStay2D(Collision2D collision)

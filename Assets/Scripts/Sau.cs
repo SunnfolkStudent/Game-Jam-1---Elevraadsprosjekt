@@ -4,11 +4,11 @@ public class Sau : MonoBehaviour
 {
     public Transform flower;
     public float moveSpeed = 5f;
-    private PlayerController _player;
+    private PlayerControllerNew _player;
     void Start()
     {
         flower = GameObject.FindGameObjectWithTag("Flower").transform;
-        _player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        _player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerControllerNew>();
     }
     
     void Update()
