@@ -14,6 +14,8 @@ public class PlayerControllerNew : MonoBehaviour
    public bool saBool;
    public bool aBool;
    public bool oBool;
+   public bool egBool;
+   public bool eBool;
    public int eTeljar;
    public int gTeljar;
    public int hTeljar;
@@ -57,6 +59,7 @@ public class PlayerControllerNew : MonoBehaviour
    public GameObject ædelmynt;
    public GameObject ørevier;
    public GameObject åkerbær;
+   public GameObject egg;
 
    public void Start()
    {
@@ -68,6 +71,7 @@ public class PlayerControllerNew : MonoBehaviour
       saBool = false;
       aBool = false;
       oBool = false;
+      egBool = false;
       AlleBools = false;
    }
 
@@ -79,7 +83,8 @@ public class PlayerControllerNew : MonoBehaviour
          saBool = false;
          aBool = false;
          oBool = false;
-         
+         eBool = false;
+         egBool = false;
          
          AlleBools = false;
       }
@@ -146,6 +151,7 @@ public class PlayerControllerNew : MonoBehaviour
          else
          {
             AlleBools = true;
+            eBool = true;
             if (eTeljar == 0)
             {
                spawnObjectMethod(einer);
@@ -168,6 +174,11 @@ public class PlayerControllerNew : MonoBehaviour
 
       if (_keyboard.gKey.wasPressedThisFrame)
       {
+         if (egBool)
+         {
+            spawnObjectMethod(egg);
+            AlleBools = false;
+         }
          if (gTeljar is 0 or 2 or 4 or 6 or 8)
          {
             spawnObjectMethod(geranium);
@@ -183,7 +194,17 @@ public class PlayerControllerNew : MonoBehaviour
             spawnObjectMethod(gran);
             gTeljar = 0;
          }
-         AlleBools = true;
+
+         if (eBool)
+         {
+            egBool = true;
+            eBool = false;
+         }
+         else
+         {
+            AlleBools = true;
+         }
+         
       }
 
       if (_keyboard.hKey.wasPressedThisFrame)
