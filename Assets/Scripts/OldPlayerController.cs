@@ -6,7 +6,6 @@ using Random = UnityEngine.Random;
 public class OldPlayerController : MonoBehaviour
 {
    private Keyboard _keyboard;
-   private Æøå _æøå;
 
    public GameObject quad;
    public GameObject sau;
@@ -46,7 +45,6 @@ public class OldPlayerController : MonoBehaviour
    public void Start()
    {
       _keyboard = Keyboard.current;
-      _æøå = GetComponent<Æøå>();
       sBool = false;
       saBool = false;
    }
@@ -83,15 +81,22 @@ public class OldPlayerController : MonoBehaviour
    
    public void SpawnObjectMethodAkeleie()
    {
+      float screenX, screenY;
+      Vector2 pos;
+      
       MeshCollider c = quad.GetComponent<MeshCollider>();
-      var screenX = Random.Range(c.bounds.min.x, c.bounds.max.x);
-      var screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
-      var pos = new Vector2(screenX, screenY);
+      screenX = Random.Range(c.bounds.min.x, c.bounds.max.x);
+      screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
+      pos = new Vector2(screenX, screenY);
       Instantiate(Akeleie, pos, Akeleie.transform.rotation);
       if (sBool)
       {
          sBool = false;
          saBool = true;
+      }
+      else
+      {
+         saBool = false;
       }
    }
    
@@ -286,6 +291,10 @@ public class OldPlayerController : MonoBehaviour
       {
          Instantiate(sau, pos, sau.transform.rotation);
          saBool = false;
+      }
+      else
+      {
+         sBool = false;
       }
    }
    
