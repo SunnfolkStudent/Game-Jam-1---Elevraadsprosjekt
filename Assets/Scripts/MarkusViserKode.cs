@@ -18,21 +18,22 @@ public class MarkusViserKode : MonoBehaviour
 
     void Update()
     {
-
+        
         scaleMultiplier = player.activeObjects.Count * Time.deltaTime / 30.14f;
 
         if (player.activeObjects.Count > 0)
         {
-            print("halo");
+            print("grow");
             cam.orthographicSize += scaleMultiplier;
+            spawn.localScale += new Vector2();
         }
         else if (player.activeObjects.Count == 0)
         {
-            print("hei");
+            print("reset");
             cam.orthographicSize -= 2 * Time.deltaTime;
         }
         
-        cam.orthographicSize = Mathf.Clamp(cam.orthographicSize, 2, 13);
+        cam.orthographicSize = Mathf.Clamp(cam.orthographicSize, 2, spawn.localScale.magnitude/4.5f);
 
         _spawnStartScale += new Vector2(0.3f, 0.15f)*Time.deltaTime;
         
