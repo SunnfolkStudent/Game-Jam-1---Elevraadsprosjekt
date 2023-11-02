@@ -12,19 +12,32 @@ public class PlayerControllerNew : MonoBehaviour
    public GameObject sau;
    public bool sBool;
    public bool saBool;
+   public bool aBool;
+   public bool oBool;
+   public int eTeljar;
+   public int gTeljar;
+   public int hTeljar;
+   public int lTeljar;
+   public int vTeljar;
+   
 
    public GameObject akeleie;
    public GameObject blåklokke;
    public GameObject cyathium;
    public GameObject dvergbjørk;
    public GameObject einer;
+   public GameObject engeltrompet;
    public GameObject fjellmarikåpe;
    public GameObject gran;
+   public GameObject geranium;
+   public GameObject giftlilje;
    public GameObject hvitveis;
+   public GameObject hjarteblome;
    public GameObject istevier;
    public GameObject jonsokkoll;
    public GameObject kattehale;
    public GameObject løvetann;
+   public GameObject liljekonvall;
    public GameObject marianøkleblom;
    public GameObject nikkebrønsle;
    public GameObject oksetunge;
@@ -35,6 +48,7 @@ public class PlayerControllerNew : MonoBehaviour
    public GameObject takrør;
    public GameObject ursinia;
    public GameObject vivendel;
+   public GameObject venus;
    public GameObject wandflower;
    public GameObject xeranthemumAnnuum;
    public GameObject yarrow;
@@ -51,6 +65,8 @@ public class PlayerControllerNew : MonoBehaviour
       _æøå = GetComponent<Æøå>();
       sBool = false;
       saBool = false;
+      aBool = false;
+      oBool = false;
    }
 
    public void Update()
@@ -63,6 +79,17 @@ public class PlayerControllerNew : MonoBehaviour
          {
             sBool = false;
             saBool = true;
+         }
+         else
+         {
+            if (aBool)
+            {
+               spawnObjectMethod(åkerbær);
+               aBool = false;
+            }
+            aBool = true;
+            saBool = false;
+            oBool = false;
          }
       }
 
@@ -83,7 +110,34 @@ public class PlayerControllerNew : MonoBehaviour
 
       if (_keyboard.eKey.wasPressedThisFrame)
       {
-         spawnObjectMethod(einer);
+         if (aBool || oBool)
+         {
+            if (aBool)
+            {
+               spawnObjectMethod(ædelmynt);
+               aBool = false;
+            }
+
+            if (oBool)
+            {
+               spawnObjectMethod(ørevier);
+               oBool = false;
+            }
+         }
+         else
+         {
+            if (eTeljar == 0)
+            {
+               spawnObjectMethod(einer);
+               eTeljar = 1;
+            }
+            if (eTeljar == 1)
+            {
+               spawnObjectMethod(engeltrompet);
+               eTeljar = 0;
+            }
+         }
+        
       }
 
       if (_keyboard.fKey.wasPressedThisFrame)
@@ -93,12 +147,36 @@ public class PlayerControllerNew : MonoBehaviour
 
       if (_keyboard.gKey.wasPressedThisFrame)
       {
-         spawnObjectMethod(gran);
+         if (gTeljar is 0 or 2 or 4 or 6 or 8)
+         {
+            spawnObjectMethod(geranium);
+            gTeljar += 1;
+         }
+         if (gTeljar is 1 or 3 or 5 or 7 or 9)
+         {
+            spawnObjectMethod(giftlilje);
+            gTeljar += 1;
+         }
+         if (gTeljar == 10)
+         {
+            spawnObjectMethod(gran);
+            gTeljar = 0;
+         }
       }
 
       if (_keyboard.hKey.wasPressedThisFrame)
       {
-         spawnObjectMethod(hvitveis);
+         if (hTeljar == 0)
+         {
+            spawnObjectMethod(hjarteblome);
+            hTeljar = 1;
+         }
+
+         if (hTeljar == 1)
+         {
+            spawnObjectMethod(hvitveis);
+            hTeljar = 0;
+         }
       }
 
       if (_keyboard.iKey.wasPressedThisFrame)
@@ -118,7 +196,17 @@ public class PlayerControllerNew : MonoBehaviour
 
       if (_keyboard.lKey.wasPressedThisFrame)
       {
-         spawnObjectMethod(løvetann);
+         if (lTeljar == 0)
+         {
+            spawnObjectMethod(løvetann);
+            lTeljar = 1;
+         }
+
+         if (lTeljar == 1)
+         {
+            spawnObjectMethod(liljekonvall);
+            lTeljar = 0;
+         }
       }
 
       if (_keyboard.mKey.wasPressedThisFrame)
@@ -134,6 +222,7 @@ public class PlayerControllerNew : MonoBehaviour
       if (_keyboard.oKey.wasPressedThisFrame)
       {
          spawnObjectMethod(oksetunge);
+         oBool = true;
       }
 
       if (_keyboard.pKey.wasPressedThisFrame)
@@ -179,11 +268,25 @@ public class PlayerControllerNew : MonoBehaviour
             spawnObjectMethod(sau);
             saBool = false;
          }
+
+         if (sBool)
+         {
+            sBool = false;
+         }
       }
 
       if (_keyboard.vKey.wasPressedThisFrame)
       {
-         spawnObjectMethod(vivendel);
+         if (lTeljar == 0)
+         {
+            spawnObjectMethod(vivendel);
+            lTeljar = 1;
+         }
+         if (lTeljar == 1)
+         {
+            spawnObjectMethod(venus);
+            lTeljar = 0;
+         }
       }
 
       if (_keyboard.wKey.wasPressedThisFrame)

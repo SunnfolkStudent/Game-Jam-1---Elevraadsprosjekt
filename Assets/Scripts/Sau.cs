@@ -23,6 +23,14 @@ public class Sau : MonoBehaviour
             {
                 directionToFlower.Normalize();
                 transform.Translate(directionToFlower * (moveSpeed * Time.deltaTime));
+                if (directionToFlower.x < 0)
+                {
+                    transform.localScale = new Vector3(1, 1, 1);
+                }
+                else
+                {
+                    transform.localScale = new Vector3(-1, 1, 1);
+                }
             }
         }
         else
