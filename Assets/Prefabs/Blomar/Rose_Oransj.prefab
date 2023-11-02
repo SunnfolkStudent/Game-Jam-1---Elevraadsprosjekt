@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2253911629886400664, guid: dc4e0f944006bf04985cee9a5010878e, type: 3}
       propertyPath: m_Name
-      value: Orange_Rose
+      value: Rose_Oransj
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: dc4e0f944006bf04985cee9a5010878e, type: 3}
       propertyPath: m_TagString
