@@ -38,8 +38,8 @@ public class MarkusViserKode : MonoBehaviour
 
         _spawnStartScale += new Vector2(0.3f, 0.15f)*Time.deltaTime;
         
-        _spawnStartScale.x = Mathf.Clamp(_spawnStartScale.x, 1, 13);
-        _spawnStartScale.y = Mathf.Clamp(_spawnStartScale.y, 1, 13);
+        _spawnStartScale.x = Mathf.Clamp(_spawnStartScale.x, 1, 46);
+        _spawnStartScale.y = Mathf.Clamp(_spawnStartScale.y, 1, 26);
         spawn.localScale = _spawnStartScale;
         
     }
