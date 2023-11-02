@@ -120,13 +120,9 @@ public class PlayerController : MonoBehaviour
    
    public void spawnObjectMethod(GameObject prefab)
    {
-      //MeshCollider c = quad.GetComponent<MeshCollider>();
-      float screenX, screenY;
-      Vector2 pos;
-      
-      screenX = Random.Range(c.bounds.min.x, c.bounds.max.x);
-      screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
-      pos = new Vector2(screenX, screenY);
+      var screenX = Random.Range(c.bounds.min.x, c.bounds.max.x);
+      var screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
+      var pos = new Vector2(screenX, screenY);
          
       Instantiate(prefab, pos, prefab.transform.rotation);
    }
@@ -230,7 +226,12 @@ public class PlayerController : MonoBehaviour
       Instantiate(Gran, pos, Gran.transform.rotation);
    }
    
-   public void spawnObjectMethodHvitveis()
+   public void spawnObjectMethodHvitveis()hCollider>();
+      float screenX, screenY;
+      Vector2 pos;
+      
+      screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
+      screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
    {
       MeshCollider c = quad.GetComponent<MeshCollider>();
       float screenX, screenY;
@@ -323,12 +324,7 @@ public class PlayerController : MonoBehaviour
    
    public void spawnObjectMethodOksetunge()
    {
-      MeshCollider c = quad.GetComponent<MeshCollider>();
-      float screenX, screenY;
-      Vector2 pos;
-      
-      screenX = Random.Range(c.bounds.min.x, c.bounds.max.x); 
-      screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
+      MeshCollider c = quad.GetComponent<Mes
       pos = new Vector2(screenX, screenY);
          
       Instantiate(Oksetunge, pos, Oksetunge.transform.rotation);
